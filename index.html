@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!---->
+    <title>Adidas Shoe Card | 2022</title>
+  </head>
+  <body>
+    <!--main-->
+    <div class="main">
+      <!--Card-->
+      <div class="cardAll">
+        <img src="assets/imgs/black.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Adidas Tyshawn Jones</h5>
+          <p class="card-text">Pro Model Shoe for SOTY 2020</p>
+        </div>
+        <div class="card-list">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <img class="li-img" src="assets/imgs/black.png" alt="" />
+            </li>
+            <li class="list-group-item">
+              <li class="list-group-item">
+                <img class="li-img" src="assets/imgs/blue.png" alt="" />
+              </li>
+              <li class="list-group-item">  
+              <img class="li-img" src="assets/imgs/red.png" alt="" />
+            </li>
+            <li class="list-group-item">
+              <img class="li-img" src="assets/imgs/white.png" alt="" />
+            </li>
+          </ul>
+        </div>
+        <div class="select-number">
+          <input
+            type="number"
+            class="select-quantity"
+            min="1"
+            value="1"
+            id="cant"
+          />
+          <input id="col" type="text" placeholder="color: black,blue,red,etc." />
+        </div>
+        <div class="price-container">
+          <h5>Precio: $<span class="price">74.990</span></h5>
+        </div>
+        <div class="button" id="calculate">
+          <button class="total" onclick="calcularTotal()">
+            Calcular el Total
+          </button>
+        </div>
+      </div>
+      <!--Card-->
+
+      <!--Cart-->
+      <div class="cart">
+        <h3>Tu cotización:</h3>
+        <p>Total:<span class="final-price">$0</span></p>
+
+        Cantidad: <span class="final-quantity">0</span>
+
+        <div class="color">
+          <p>Color:</p>
+          <div class="box"></div>
+        </div>
+      </div>
+      <!--Cart-->
+    </div>
+    <!--main-->
+    <!--Script-->
+    <script src="assets/js/script.js"></script>
+    <!--Script-->
+  </body>
+</html>

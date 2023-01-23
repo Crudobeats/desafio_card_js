@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+$primary: rgb(248, 246, 246);
+$secondary: rgb(78, 144, 146);
+$third:  rgb(68, 63, 63);
+$four: rgb(176, 232, 240);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary;
+    font-family: sans-serif;
+}
+
+.cardAll {
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+    background-color: $secondary;
+    border-radius: 20px;
+    gap: 10px;
+    color: $primary;
+    box-shadow: 0px 0px 40px #c8c8c8;
+    .card-img-top {
+        width: 500px;
+        padding: auto;
+    }
+}
+
+.card-body {
+    font-size: x-large;
+    height:60px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-list {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    .list-group {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        justify-content: space-around;
+    }
+}
+
+.list-group-item {
+    list-style: none;
+}
+
+.li-img {
+    width: 100px;
+}
+.card-img-top {
+    width: 80%;
+}
+
+.price-container {
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.select-number {
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-quantity {
+    width: 200px;
+}
+
+.select-color {
+    width: 200px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.total {
+    padding: 10px;
+    width: 70%;
+    border-radius: 5px;
+    border: 1px solid $primary;
+    align-items: center;
+    color: $third;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    padding: 20px;
+    color: $third;
+    font-size: larger;
+}
+
+.color {
+    display: flex;
+    gap: 30px;
+    .box {
+        width: 20px;
+        height: 20px;
+        background-color: black;
+        padding-left: 10px;
+        border-radius: 10px;
+    }
+}
+
+.main {
+    display: flex;
+}
+
+img:hover {
+    background-color: rgba(70, 238, 227, 0.205);
+}
+
+.total:hover {
+    background-color: coral;
+    color: white;
+    font-weight: 400;;
+}
